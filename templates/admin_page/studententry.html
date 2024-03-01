@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STUDENT ENTRY</title>
+        <style>
+           
+        </style>
+    </head>
+    <body>
+        <script>
+            let input=document.querySelector('input')
+            let div=document.querySelector('div')
+            input.addEventListener('change',() => {
+                let files=input.files;
+                if (files.length>0){
+                    if (files[0].length>150*1024){
+                        span.innerText='Image Size exceeds 150kB'+files[0].length;
+                        return;
+                    }
+                    span.innerHTML=files[0].length;
+                }
+                span.innerHTML=''
+            })
+        </script>
+        <h1>New Student Account</h1>
+        <form action="/studententry" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <label for="student_id">STUDENT ID</label>
+            <input type="text" id="student_id" name="student_id" placeholder="STUDENT ID" required>
+            <br>
+            <label for="student_name">STUDENT NAME</label>
+            <input type="text" id="student_name" name="student_name" placeholder="STUDENT NAME" required>
+            <br>
+            <label for="student_email">STUDENT EMAIL</label>
+            
+            <input type="email" id="student_email" name="student_email" placeholder="STUDENT EMAIL" required>
+            <br>
+            <label for="student_contact">STUDENT CONTACT</label>
+            <input type="text" id="student_contact" name="student_contact" placeholder="STUDENT CONTACT" minlength="10" maxlength="10" required>
+            <br>
+            <label for="student_branch">STUDENT CONTACT</label>
+            <input type="text" id="student_branch" name="student_branch" placeholder="STUDENT BRANCH" required>
+            <br>
+            
+            <label for="">Password</label>
+            <input type="text" id="password" name="password" placeholder="Create STUDENT password" required>
+            <br>
+            <label for="student_image">STUDENT IMAGE URL:</label>
+            <input type="text" id="student_image" name="student_image" placeholder="Enter the url" required>
+            <div></div>
+            <br>
+            <button type="submit">Confirm</button>
+        </form>
+    </body>
+</html>

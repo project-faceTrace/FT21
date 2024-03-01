@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FACULTY ENTRY</title>
+    </head>
+    <body>
+        <h1>New Faculty Account</h1>
+        <form action="/facultyentry" method="post">
+            {% csrf_token %}
+
+            <label for="faculty_id">FACULTY ID</label>
+            <input type="text" id="faculty_id" name="faculty_id" placeholder="FACULTY ID" required>
+            <br>
+            <label for="faculty_name">FACULTY NAME</label>
+            <input type="text" id="faculty_name" name="faculty_name" placeholder="FACULTY NAME" required>
+            <br>
+            <label for="faculty_email">FACULTY EMAIL</label>
+            
+            <input type="email" id="faculty_email" name="faculty_email" placeholder="FACULTY EMAIL" required>
+            <br>
+            <label for="faculty_contact">FACULTY CONTACT</label>
+            <input type="text" id="faculty_contact" name="faculty_contact" placeholder="FACULTY CONTACT" minlength="10" maxlength="10" required>
+            <br>
+            
+            <label for="">Password</label>
+            <input type="text" id="password" name="password" placeholder="Create ADMIN password" required>
+            <br>
+            <button type="submit">Confirm</button>
+        </form>
+    </body>
+</html>

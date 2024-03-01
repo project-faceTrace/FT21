@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .user-info {
+      float: left;
+      margin-left: 20px;
+      margin-top: 20px;
+      text-align: center;
+      width: 15%;
+    }
+
+    .user-info img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 5px;
+    /*  margin-left: 50px;*/
+    }
+
+/*    .user-info p{
+        margin-left: 35px;
+    }*/
+
+    .user-info a {
+      display: block;
+      color: blue;
+      text-decoration: none;
+      margin-top: 5px;
+    }
+
+    .profile-box {
+      margin-top: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .form-container {
+      margin: 20px auto; /* Center the form horizontally */
+      margin-left: 500px;
+      width: 70%; /* Set the width of the form */
+      max-width: 600px; /* Decreased max-width */
+      padding: 40px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+      text-align: left; /* Align the form content to the left */
+      height: 400px; /* Increased height of the form */
+    }
+
+    .form-container label {
+      margin-top: 30px;
+      display: inline-block;
+      width: 150px;
+      margin-bottom: 10px; /* Increased margin for better spacing */
+    }
+
+    .form-container select,
+    .form-container input {
+      width: calc(100% - 160px); /* Adjusted the width of form elements */
+      margin-bottom: 15px; /* Increased margin for better spacing */
+      box-sizing: border-box;
+      padding: 10px; /* Increased padding for better appearance */
+    }
+
+    .form-container button {
+      background-color: #333;
+      color: white;
+      padding: 15px; /* Increased padding for better appearance */
+      cursor: pointer;
+      display: block;
+      margin: 0 auto; /* Center the button horizontally */
+      margin-top: 20px;
+      width: calc(100% - 20px); /* Adjusted the width of the button */
+    }
+
+    .form-container button:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Logout styling */
+    .logout {
+      float: right;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .logout:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Attendance Status styling */
+    .attendance-status {
+      text-align: left;
+      margin-left: 600px;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+  <title>Attendance System</title>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#login">Login</a>
+    <a href="#contact">Contact</a>
+    <a class="logout" href="#logout">Logout &#x02190;</a>
+  </nav>
+
+  <div class="header">
+    <h1>DEPARTMENT OF COMPUTER SCIENCE</h1>
+  </div>
+
+  <div class="user-info">
+    <img src="image/pic.jpg" alt="Profile Picture">
+    <p>User Name</p>
+    <div class="profile-box">
+      <a href="#view-profile">View Your Profile</a>
+    </div>
+    
+  </div>
+
+  <div class="attendance-status">
+    <h2>Attendance Status</h2>
+  </div>
+
+  <div class="form-container">
+    <form>
+      <label for="course">Select Subject code:</label>
+      <select id="course" name="course">
+        <option value="cs101">CS 101</option>
+        <option value="cs102">CS 102</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <label for="subject">Select Branch:</label>
+      <select id="subject" name="subject">
+        <option value="it">IT</option>
+        <option value="programming">Programming</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      
+
+      <label for="date">Enter Date:</label>
+      <input type="date" id="date" name="date">
+
+      <button type="submit">Take Attendance</button>
+      <button type="submit">Edit Attendance</button>
+      <button type="submit">View Attendance</button>
+    </form>
+  </div>
+
+  <!-- Your page content goes here -->
+
+</body>
+</html>

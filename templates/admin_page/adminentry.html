@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADMIN ENTRY</title>
+    </head>
+    <body>
+        <h1>SignUp</h1>
+        <form action="/adminentry" method="post">
+            {% csrf_token %}
+
+            <label for="admin_id">ADMIN ID</label>
+            <input type="text" id="admin_id" name="admin_id" placeholder="ADMIN ID" required>
+            <br>
+            <label for="admin_name">ADMIN NAME</label>
+            <input type="text" id="admin_name" name="admin_name" placeholder="HOD NAME" required>
+            <br>
+            <label for="admin_email">ADMIN EMAIL</label>
+            
+            <input type="email" id="admin_email" name="admin_email" placeholder="ADMIN EMAIL" required>
+            <br>
+            <label for="admin_contact">ADMIN CONTACT</label>
+            <input type="text" id="admin_contact" name="admin_contact" placeholder="ADMIN CONTACT" minlength="10" maxlength="10" required>
+            <br>
+           
+            <label for="">Password</label>
+            <input type="text" id="password" name="password" placeholder="Create ADMIN password" required>
+            <br>
+            <button type="submit">Confirm</button>
+        </form>
+    </body>
+</html>
