@@ -1,0 +1,70 @@
+body {
+    background-color: rgba(54, 51, 51, 0.1);
+}
+
+h1 {
+    text-align: center;
+   
+    color: white; /* Adjust color as needed */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background-color:rgba(228, 111, 173, 0.5);;
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
+    
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    border-radius: 8px;
+    color:brown; /* Adjust color as needed */
+    cursor: pointer;
+    
+
+}
+
+.box a{
+    text-align:right;
+}
+
+#box1 {
+    background-image: url(ad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+#box2 {
+    background-image: url(Teacher.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#box3 {
+    background-image: url(Student.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#box4 {
+    background-image: url(Adm.jpg);
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+}
+
+.footer {
+    text-align: center;
+    color: white; /* Adjust color as needed */
+    margin-top: 50px;
+}

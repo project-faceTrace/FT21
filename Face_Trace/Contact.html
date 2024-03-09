@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('image_lambo.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .outer-table {
+            margin-top: 0;
+            padding: 0px 0px 0px 0px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100vw;
+            overflow: hidden;
+            /* Prevent video overflow */
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            max-width: 800px;
+            margin: 100px auto 0;
+            /* Added top margin of 100px */
+        }
+
+        .table-wrapper {
+            margin-top: 20px;
+            margin-right: 20px;
+            padding-left: 20px;
+
+        }
+
+        table {
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+        }
+
+        table td {
+            padding: 12px;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+        }
+
+        .nav {
+            margin: 0;
+            margin-top: 0;
+            font-family: Roboto, Helvetica Neue, Arial;
+            padding-top: 5px;
+            padding-bottom: 0px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background-color: #181818;
+        }
+
+        .nav a {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        .nav img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .social-icons a img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            /* Make the button full width on smaller screens */
+        }
+
+        button:hover {
+            background-color: #c71585;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .table-wrapper {
+                margin-right: 0;
+                padding-left: 0;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            .social-icons a {
+                margin-right: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://formspree.io/f/xleqbkke" method="POST">
+        <div class="outer-table">
+            <table class="nav" border="0" width="100%" cellspacing="0" cellpadding="15" bgcolor="#181818">
+                <tr>
+                    <td><img src="Logo1.png" height="72" width="70"></td>
+                    <td><a href="index1.html" style="color: white; text-decoration: none;">HOME</a></td>
+                    <td><a href="About.html" style="color: white; text-decoration: none;">ABOUT</a></td>
+                    <td><a href="model.html" style="color: white; text-decoration: none;">MODELS</a></td>
+                    <td><a href="Contact.html" style="color: white; text-decoration: none;">CONTACT</a></td>
+                    <td></td>
+                    <td><a href="#" style="color: white; text-decoration: none;"></a></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="container1">
+                <div class="table-wrapper">
+                    <fieldset>
+                        <legend style="color:#181818;"><b>SEND MESSAGE</b></legend>
+                        <table style="background-color: pink;">
+                            <tr>
+                                <td><b>First Name:</b></td>
+                                <td><input type="text" name="First Name" placeholder="Enter your first name" required
+                                        autocomplete="off"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Last Name:</b></td>
+                                <td><input type="text" name="Last Name" placeholder="Enter your last name" required
+                                        autocomplete="off"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Subject:</b></td>
+                                <td><input type="text" name="Subject" placeholder="Enter subject for mail" required
+                                        autocomplete="off"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Email Address:</b></td>
+                                <td><input type="email" name="Email" placeholder="Enter your email" required
+                                        autocomplete="off"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Message:</b></td>
+                                <td><textarea name="Message" rows="4" placeholder="Enter your message" required
+                                        autocomplete="off"></textarea></td>
+                                <td><button>Send</button></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+                <div class="table-wrapper">
+                    <fieldset>
+                        <legend style="color:#fff"><b>CONTACT US</b></legend>
+                        <table
+                            style="background-color: pink; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 40px;">
+                            <tr>
+                                <td colspan="5" rowspan="2">
+                                    <h3>Service Provider Information</h3>
+                                    <p><b>Address:</b> Banasthali Vidyapith, Tonk, Rajasthan</p>
+                                    <p><b>Phone:</b> +91-8233831801</p>
+                                    <p><b>Email:</b> ishikaaggarwal1619@gmail.com</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="social-icons">
+                                        <a href="https://www.linkedin.com/in/ishika-aggarwal-6a99b0291/"><img
+                                                src="linkedin.png " alt="Linkedin"
+                                                style="width: 26px; height: 24px;"></a>
+                                        <a href="https://www.instagram.com/gu__ngun1551?igsh=eDBqbDE3aThxNGg="><img
+                                                src="instagram-logo-png.png" alt="Instagram"
+                                                style="width: 26px; height: 24px;"></a>
+                                        <a href="https://x.com/IshikaA19156370?t=jgdV-SYTsEyIODQUYjMg&s=09"><img
+                                                src="twitter-x-logo.png" alt="Twitter"
+                                                style="width: 26px; height: 24px;"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; background-color:#181818; color: white; padding: 10px;">
+            <p>Fuel consumption combined: 19,5-10,3 l/100km (WLTP); Power consumption combined: 78,1 kWh/100 Km (WLTP);
+                CO2-emissions combined: 442-276 g/km (WLTP)</p>
+        </div>
+    </form>
+</body>
+
+</html>
